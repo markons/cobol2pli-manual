@@ -1,6 +1,8 @@
-# COBOL to PL/I Conversion Help
+# <p align="center">  COBOL to PL/I Conversion Help</p>
+<p align="center">By Gábor MÁRKON </p>
+<p align="center">Version 0.1 </p> 
 
-Tartalom
+Content
 
 [COBOL to PL/I Conversion Help 1](#_Toc216026900)
 
@@ -408,6 +410,9 @@ COBOL executes **top-to-bottom**, invoking paragraphs through PERFORM.
 **Data Model:**
 Data is defined as hierarchical **records** using PIC clauses.
 
+**Comments:**
+A full-line comment starts with an asterisk (*) in column 7. These comments can be placed in any division of the program.
+
 ### 2.2 PL/I’s Architecture
 
 PL/I eliminates divisions entirely.
@@ -420,6 +425,9 @@ A PL/I program consists of:
 * **statements**
 * **exception handlers** (ON ... units)
 * optional submodules (%INCLUDE)
+* **Comments:**
+Comment line(s) begins with /* and ends with */. Although comments may be embedded within a PL/I statements, but it is recommended to keep the embedded
+
 
 PL/I is **free-form**, like C, Java, or Python:
 
@@ -442,11 +450,29 @@ PL/I is **free-form**, like C, Java, or Python:
 | Recursion            | Not allowed          | Allowed                 |
 | Dynamic memory       | Not available        | Full support            |
 | Arrays               | Only 1D              | Multi-dimensional       |
+|**Reserved words** \* | Yes                  | No                      |
+| Strongly-typed \**   | Yes                  | Yes                     |
+| Default declarations | No                   | Yes \***                |
+
+
+\* In computer programming, a reserved word, also known as a reserved identifier, is a word in a programming language that has a specific meaning.
+Additionally, we can’t use it as an identifier.
+We can’t redefine or use them in any other way than the one intended by the language’s creators.
+
+\** A strongly typed programming language is one in which each type of data, such as integers, characters, hexadecimals and packed decimals, is predefined as part of the programming language, and all constants or variables defined for a given program must be described with one of the data types. Certain operations might be allowable only with specific data types.
+
+\*** In PL/I, a default declaration refers to the implicit attributes that the compiler assigns to a variable or constant when you declare it without explicitly specifying all of its attributes. 
+If you declare a variable without a type, PL/I assigns a default type based on the first letter of the name (unless overridden by an DEFAULT statement).
+By default:
+Names starting with A–H, O–Z → FIXED BINARY(15)
+Names starting with I–N → FIXED BINARY(31) .
+This can be undefined by the PL/I compiler option **RULES**.
 
 ### 2.4 Example Comparison
 
 **COBOL:**
 
+```
 IDENTIFICATION DIVISION.
 
 PROGRAM-ID. SAMPLE.
@@ -462,20 +488,24 @@ A-PARA.
 DISPLAY "HELLO".
 
 EXIT.
+```
 
 **PL/I:**
 
+```
 SAMPLE: PROC OPTIONS(MAIN);
 
-CALL A\_PARA;
+CALL A_PARA;
+
+A_PARA: PROC;
+  /* This is an internal procedure */
+
+  PUT SKIP LIST('HELLO');
+
+END A_PARA;
 
 END SAMPLE;
-
-A\_PARA: PROC;
-
-PUT SKIP LIST('HELLO');
-
-END A\_PARA;
+```
 
 ## Chapter 3 — Data Declaration and Typing
 
@@ -2253,5 +2283,6 @@ Only a selection is shown here due to size; the final DOCX will contain all entr
 ## [IBM Enterprise PL/I for z/OS - IBM Documentation](https://www.ibm.com/docs/en/epfz/6.2.0)
 
 [**Open PL/I Language Reference Manual**](https://www.microfocus.com/documentation/enterprise-developer/ed60/ED-VS2017/BKPFPFPREF.html)
+
 
 [**Open PL/I User's Guide**](https://www.microfocus.com/documentation/enterprise-developer/ed60/ED-VS2019/BKPUPUPREF.html)
