@@ -11,9 +11,7 @@ This manual contains deep, production-quality explanations of every major langua
 
 **[Download COBOL_to_PLI_Transition_Manual_MS.md](./COBOL_to_PLI_Transition_Manual_MS.md)**          (if you prefer .md - this version must be updated in the future)
 
-**[Download COBOL_to_PLI_Transition_Manual_FULL.docx](./COBOL_to_PLI_Transition_Manual_FULL.docx)**  (if you prefer .docx)
-
-(Place this file in the repository root to enable the link.)
+**[Download COBOL_to_PLI_Transition_Manual_FULL.docx](./COBOL_to_PLI_Transition_Manual_FULL.docx)**  (if you prefer .docx .  **This format is not more updated!**)
 
 ---
 
