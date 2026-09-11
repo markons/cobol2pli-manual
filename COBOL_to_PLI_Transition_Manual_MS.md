@@ -4,295 +4,295 @@
 
 Content
 
-[COBOL to PL/I Conversion Help 1](#_Toc216026900)
+[COBOL to PL/I Conversion Help 1](#cobol-to-pli-conversion-help)
 
-[Chapter 1 — Introduction 5](#_Toc216026901)
+[Chapter 1 — Introduction 5](#chapter-1--introduction)
 
-[1.1 Purpose of This Manual 5](#_Toc216026902)
+[1.1 Purpose of This Manual 5](#11-purpose-of-this-manual)
 
-[1.2 What Is PL/I? 6](#_Toc216026903)
+[1.2 What Is PL/I? 6](#12-what-is-pli)
 
-[1.3 Why COBOL Programmers Encounter PL/I 6](#_Toc216026904)
+[1.3 Why COBOL Programmers Encounter PL/I 6](#13-why-cobol-programmers-encounter-pli)
 
-[1.4 Fundamental Philosophical Differences Between COBOL and PL/I 7](#_Toc216026905)
+[1.4 Fundamental Philosophical Differences Between COBOL and PL/I 7](#14-fundamental-philosophical-differences-between-cobol-and-pli)
 
-[Chapter 2 — Language Philosophy and Architecture 8](#_Toc216026906)
+[Chapter 2 — Language Philosophy and Architecture 8](#chapter-2--language-philosophy-and-architecture)
 
-[2.1 COBOL’s Architecture 8](#_Toc216026907)
+[2.1 COBOL’s Architecture 8](#21-cobols-architecture)
 
-[2.2 PL/I’s Architecture 9](#_Toc216026908)
+[2.2 PL/I’s Architecture 9](#22-plis-architecture)
 
-[2.3 Structural Comparison 9](#_Toc216026909)
+[2.3 Structural Comparison 9](#23-structural-comparison)
 
-[2.4 Example Comparison 10](#_Toc216026910)
+[2.4 Example Comparison 10](#24-example-comparison)
 
-[Chapter 3 — Data Declaration and Typing 10](#_Toc216026911)
+[Chapter 3 — Data Declaration and Typing 10](#chapter-3--data-declaration-and-typing)
 
-[3.1 COBOL Data Types (PIC Clauses) 10](#_Toc216026912)
+[3.1 COBOL Data Types (PIC Clauses) 10](#31-cobol-data-types-pic-clauses)
 
-[3.2 PL/I Data Types 11](#_Toc216026913)
+[3.2 PL/I Data Types 11](#32-pli-data-types)
 
-[3.3 Example: COBOL vs PL/I structure 12](#_Toc216026914)
+[3.3 Example: COBOL vs PL/I structure 12](#33-example-cobol-vs-pli-structure)
 
-[3.4 Arrays 12](#_Toc216026915)
+[3.4 Arrays 12](#34-arrays)
 
-[3.5 Dynamic Structures 12](#_Toc216026916)
+[3.5 Dynamic Structures 12](#35-dynamic-structures)
 
-[Chapter 4 — Storage Classes and Lifetimes 13](#_Toc216026917)
+[Chapter 4 — Storage Classes and Lifetimes 13](#chapter-4--storage-classes-and-lifetimes)
 
-[4.1 COBOL Storage 13](#_Toc216026918)
+[4.1 COBOL Storage 13](#41-cobol-storage)
 
-[4.2 PL/I Storage Classes 13](#_Toc216026919)
+[4.2 PL/I Storage Classes 13](#42-pli-storage-classes)
 
-[4.3 CONTROLLED vs BASED 13](#_Toc216026920)
+[4.3 CONTROLLED vs BASED 13](#43-controlled-vs-based)
 
-[Chapter 5 — Control Flow 15](#_Toc216026921)
+[Chapter 5 — Control Flow 15](#chapter-5--control-flow)
 
-[5.1 DO Loops vs PERFORM 15](#_Toc216026922)
+[5.1 DO Loops vs PERFORM 15](#51-do-loops-vs-perform)
 
-[5.2 IF Statements 15](#_Toc216026923)
+[5.2 IF Statements 15](#52-if-statements)
 
-[5.3 SELECT WHEN (COBOL EVALUATE) 15](#_Toc216026924)
+[5.3 SELECT WHEN (COBOL EVALUATE) 15](#53-select-when-cobol-evaluate)
 
-[5.4 Exception Handling (ON-units) 16](#_Toc216026925)
+[5.4 Exception Handling (ON-units) 16](#54-exception-handling-on-units)
 
-[Chapter 6 — Structures (Records) in PL/I vs COBOL 17](#_Toc216026926)
+[Chapter 6 — Structures (Records) in PL/I vs COBOL 17](#chapter-6--structures-records-in-pli-vs-cobol)
 
-[6.1 COBOL Records: Rigid, Hierarchical 17](#_Toc216026927)
+[6.1 COBOL Records: Rigid, Hierarchical 17](#61-cobol-records-rigid-hierarchical)
 
-[6.2 PL/I Structures: Flexible and Typed 18](#_Toc216026928)
+[6.2 PL/I Structures: Flexible and Typed 18](#62-pli-structures-flexible-and-typed)
 
-[6.3 Arrays of Structures (PL/I-only) 18](#_Toc216026929)
+[6.3 Arrays of Structures (PL/I-only) 18](#63-arrays-of-structures-pli-only)
 
-[6.4 Nested Structures and True Typing 19](#_Toc216026930)
+[6.4 Nested Structures and True Typing 19](#64-nested-structures-and-true-typing)
 
-[6.5 Structure Assignments 19](#_Toc216026931)
+[6.5 Structure Assignments 19](#65-structure-assignments)
 
-[6.6 Unions (REDEFINES Equivalent) 19](#_Toc216026932)
+[6.6 Unions (REDEFINES Equivalent) 19](#66-unions-redefines-equivalent)
 
-[Chapter 7 — Strings and Character Handling 20](#_Toc216026933)
+[Chapter 7 — Strings and Character Handling 20](#chapter-7--strings-and-character-handling)
 
-[7.1 COBOL Strings 20](#_Toc216026934)
+[7.1 COBOL Strings 20](#71-cobol-strings)
 
-[7.2 PL/I Character Types 20](#_Toc216026935)
+[7.2 PL/I Character Types 20](#72-pli-character-types)
 
-[7.3 Powerful String Built-ins 21](#_Toc216026936)
+[7.3 Powerful String Built-ins 21](#73-powerful-string-built-ins)
 
-[7.4 Reference Modification in PL/I 21](#_Toc216026937)
+[7.4 Reference Modification in PL/I 21](#74-reference-modification-in-pli)
 
-[7.5 Concatenation 22](#_Toc216026938)
+[7.5 Concatenation 22](#75-concatenation)
 
-[Chapter 8 — Arrays and Multidimensional Data 23](#_Toc216026939)
+[Chapter 8 — Arrays and Multidimensional Data 23](#chapter-8--arrays-and-multidimensional-data)
 
-[8.1 COBOL Arrays 23](#_Toc216026940)
+[8.1 COBOL Arrays 23](#81-cobol-arrays)
 
-[8.2 PL/I Arrays 23](#_Toc216026941)
+[8.2 PL/I Arrays 23](#82-pli-arrays)
 
-[8.3 Array Slicing and Whole-Array Operations 23](#_Toc216026942)
+[8.3 Array Slicing and Whole-Array Operations 23](#83-array-slicing-and-whole-array-operations)
 
-[8.4 Dynamic Arrays 25](#_Toc216026943)
+[8.4 Dynamic Arrays 25](#84-dynamic-arrays)
 
-[Chapter 9 — Pointers, BASED, CONTROLLED, and Dynamic Memory 26](#_Toc216026944)
+[Chapter 9 — Pointers, BASED, CONTROLLED, and Dynamic Memory 26](#chapter-9--pointers-based-controlled-and-dynamic-memory)
 
-[9.1 POINTER Type 26](#_Toc216026945)
+[9.1 POINTER Type 26](#91-pointer-type)
 
-[9.2 BASED Variables 26](#_Toc216026946)
+[9.2 BASED Variables 26](#92-based-variables)
 
-[9.3 CONTROLLED Variables 26](#_Toc216026947)
+[9.3 CONTROLLED Variables 26](#93-controlled-variables)
 
-[9.4 Linked Lists Example 27](#_Toc216026948)
+[9.4 Linked Lists Example 27](#94-linked-lists-example)
 
-[Chapter 10 — Areas and Storage Pools 28](#_Toc216026949)
+[Chapter 10 — Areas and Storage Pools 28](#chapter-10--areas-and-storage-pools)
 
-[Chapter 11 — File Handling: PL/I vs COBOL 29](#_Toc216026950)
+[Chapter 11 — File Handling: PL/I vs COBOL 29](#chapter-11--file-handling-pli-vs-cobol)
 
-[11.1 COBOL File Model (FD / SELECT) 29](#_Toc216026951)
+[11.1 COBOL File Model (FD / SELECT) 29](#111-cobol-file-model-fd--select)
 
-[11.2 PL/I File Model (FILE Declarations) 30](#_Toc216026952)
+[11.2 PL/I File Model (FILE Declarations) 30](#112-pli-file-model-file-declarations)
 
-[11.3 Sequential Read Logic 30](#_Toc216026953)
+[11.3 Sequential Read Logic 30](#113-sequential-read-logic)
 
-[11.4 Writing Records 31](#_Toc216026954)
+[11.4 Writing Records 31](#114-writing-records)
 
-[11.5 Keyed / Indexed Files 31](#_Toc216026955)
+[11.5 Keyed / Indexed Files 31](#115-keyed--indexed-files)
 
-[Chapter 12 — Exception Handling (Conditions and ON-units) 33](#_Toc216026956)
+[Chapter 12 — Exception Handling (Conditions and ON-units) 33](#chapter-12--exception-handling-conditions-and-on-units)
 
-[12.1 Conditions 33](#_Toc216026957)
+[12.1 Conditions 33](#121-conditions)
 
-[12.2 ON-units: Local Exception Handlers 33](#_Toc216026958)
+[12.2 ON-units: Local Exception Handlers 33](#122-on-units-local-exception-handlers)
 
-[12.3 Comparison with COBOL 34](#_Toc216026959)
+[12.3 Comparison with COBOL 34](#123-comparison-with-cobol)
 
-[12.4 Explicit SIGNAL 34](#_Toc216026960)
+[12.4 Explicit SIGNAL 34](#124-explicit-signal)
 
-[12.5 CLEANUP Equivalent 34](#_Toc216026961)
+[12.5 CLEANUP Equivalent 34](#125-cleanup-equivalent)
 
-[Chapter 13 — Procedures and Modularity 35](#_Toc216026962)
+[Chapter 13 — Procedures and Modularity 35](#chapter-13--procedures-and-modularity)
 
-[13.1 COBOL CALL vs PL/I PROC 35](#_Toc216026963)
+[13.1 COBOL CALL vs PL/I PROC 35](#131-cobol-call-vs-pli-proc)
 
-[13.2 PL/I Procedure Declaration 35](#_Toc216026964)
+[13.2 PL/I Procedure Declaration 35](#132-pli-procedure-declaration)
 
-[13.3 Parameter Passing 35](#_Toc216026965)
+[13.3 Parameter Passing 35](#133-parameter-passing)
 
-[13.4 Nested Procedures 36](#_Toc216026966)
+[13.4 Nested Procedures 36](#134-nested-procedures)
 
-[13.5 Recursion 36](#_Toc216026967)
+[13.5 Recursion 36](#135-recursion)
 
-[Chapter 14 — SQL in PL/I vs COBOL 37](#_Toc216026968)
+[Chapter 14 — SQL in PL/I vs COBOL 37](#chapter-14--sql-in-pli-vs-cobol)
 
-[14.1 Host Variables 37](#_Toc216026969)
+[14.1 Host Variables 37](#141-host-variables)
 
-[14.2 SQLCA 37](#_Toc216026970)
+[14.2 SQLCA 37](#142-sqlca)
 
-[14.3 Cursors 37](#_Toc216026971)
+[14.3 Cursors 37](#143-cursors)
 
-[Chapter 15 — Built-in Function Reference (EXTENDED) 39](#_Toc216026972)
+[Chapter 15 — Built-in Function Reference (EXTENDED) 39](#chapter-15--built-in-function-reference-extended)
 
-[15.1 String Functions 39](#_Toc216026973)
+[15.1 String Functions 39](#151-string-functions)
 
-[15.2 Numeric Functions 39](#_Toc216026974)
+[15.2 Numeric Functions 39](#152-numeric-functions)
 
-[15.3 Bit Functions 40](#_Toc216026975)
+[15.3 Bit Functions 40](#153-bit-functions)
 
-[15.4 Array Functions 40](#_Toc216026976)
+[15.4 Array Functions 40](#154-array-functions)
 
-[15.5 Condition Functions 40](#_Toc216026977)
+[15.5 Condition Functions 40](#155-condition-functions)
 
-[15.6 Miscellaneous Functions 41](#_Toc216026978)
+[15.6 Miscellaneous Functions 41](#156-miscellaneous-functions)
 
-[Chapter 16 — Advanced Data Features (OVERLAY, UNION, AREA) 42](#_Toc216026979)
+[Chapter 16 — Advanced Data Features (OVERLAY, UNION, AREA) 42](#chapter-16--advanced-data-features-overlay-union-area)
 
-[16.1 UNION (Advanced REDEFINES) 42](#_Toc216026980)
+[16.1 UNION (Advanced REDEFINES) 42](#161-union-advanced-redefines)
 
-[16.2 OVERLAY 42](#_Toc216026981)
+[16.2 OVERLAY 42](#162-overlay)
 
-[16.3 AREA 43](#_Toc216026982)
+[16.3 AREA 43](#163-area)
 
-[16.4 STORAGE Class 43](#_Toc216026983)
+[16.4 STORAGE Class 43](#164-storage-class)
 
-[Chapter 17 — Concurrency and Tasking 44](#_Toc216026984)
+[Chapter 17 — Concurrency and Tasking 44](#chapter-17--concurrency-and-tasking)
 
-[17.1 TASK Statements 44](#_Toc216026985)
+[17.1 TASK Statements 44](#171-task-statements)
 
-[17.2 Event Handling 44](#_Toc216026986)
+[17.2 Event Handling 44](#172-event-handling)
 
-[Chapter 18 — Debugging Techniques and ON Conditions 46](#_Toc216026987)
+[Chapter 18 — Debugging Techniques and ON Conditions 46](#chapter-18--debugging-techniques-and-on-conditions)
 
-[18.1 ON ERROR for Debugging 46](#_Toc216026988)
+[18.1 ON ERROR for Debugging 46](#181-on-error-for-debugging)
 
-[18.2 ON UNDEFINEDFILE, ON FINISH 46](#_Toc216026989)
+[18.2 ON UNDEFINEDFILE, ON FINISH 46](#182-on-undefinedfile-on-finish)
 
-[18.3 Built-in Debugging Functions 46](#_Toc216026990)
+[18.3 Built-in Debugging Functions 46](#183-built-in-debugging-functions)
 
-[18.4 Compiler Options for Debugging 47](#_Toc216026991)
+[18.4 Compiler Options for Debugging 47](#184-compiler-options-for-debugging)
 
-[Chapter 19 — Performance Guidelines 48](#_Toc216026992)
+[Chapter 19 — Performance Guidelines 48](#chapter-19--performance-guidelines)
 
-[19.1 Use FIXED BINARY Whenever Possible 48](#_Toc216026993)
+[19.1 Use FIXED BINARY Whenever Possible 48](#191-use-fixed-binary-whenever-possible)
 
-[19.2 Avoid Excessive POINTER and BASED Use 48](#_Toc216026994)
+[19.2 Avoid Excessive POINTER and BASED Use 48](#192-avoid-excessive-pointer-and-based-use)
 
-[19.3 Use VARYING Strings for Performance 48](#_Toc216026995)
+[19.3 Use VARYING Strings for Performance 48](#193-use-varying-strings-for-performance)
 
-[19.4 Avoid Unnecessary ON-units 48](#_Toc216026996)
+[19.4 Avoid Unnecessary ON-units 48](#194-avoid-unnecessary-on-units)
 
-[19.5 Inline Arithmetic (Expression-Oriented) 48](#_Toc216026997)
+[19.5 Inline Arithmetic (Expression-Oriented) 48](#195-inline-arithmetic-expression-oriented)
 
-[19.6 Compiler Optimization 49](#_Toc216026998)
+[19.6 Compiler Optimization 49](#196-compiler-optimization)
 
-[Chapter 20 — Migration Strategies from COBOL to PL/I 50](#_Toc216026999)
+[Chapter 20 — Migration Strategies from COBOL to PL/I 50](#chapter-20--migration-strategies-from-cobol-to-pli)
 
-[20.1 Translate Control Flow First 50](#_Toc216027000)
+[20.1 Translate Control Flow First 50](#201-translate-control-flow-first)
 
-[20.2 Translate Data Structures 50](#_Toc216027001)
+[20.2 Translate Data Structures 50](#202-translate-data-structures)
 
-[20.3 Replace COPY Libraries with %INCLUDE 50](#_Toc216027002)
+[20.3 Replace COPY Libraries with %INCLUDE 50](#203-replace-copy-libraries-with-include)
 
-[20.4 Convert File Logic 50](#_Toc216027003)
+[20.4 Convert File Logic 50](#204-convert-file-logic)
 
-[20.5 Convert String Handling 51](#_Toc216027004)
+[20.5 Convert String Handling 51](#205-convert-string-handling)
 
-[20.6 Handling COMP-3 Fields 51](#_Toc216027005)
+[20.6 Handling COMP-3 Fields 51](#206-handling-comp-3-fields)
 
-[20.7 Testing and Validation 51](#_Toc216027006)
+[20.7 Testing and Validation 51](#207-testing-and-validation)
 
-[Chapter 21 — Idiomatic PL/I for COBOL Programmers 52](#_Toc216027007)
+[Chapter 21 — Idiomatic PL/I for COBOL Programmers 52](#chapter-21--idiomatic-pli-for-cobol-programmers)
 
-[21.1 Whole-Array Operations 52](#_Toc216027008)
+[21.1 Whole-Array Operations 52](#211-whole-array-operations)
 
-[21.2 Whole-Structure Assignment 52](#_Toc216027009)
+[21.2 Whole-Structure Assignment 52](#212-whole-structure-assignment)
 
-[21.3 Selective Exception Handling 52](#_Toc216027010)
+[21.3 Selective Exception Handling 52](#213-selective-exception-handling)
 
-[21.4 Dynamic Buffers 52](#_Toc216027011)
+[21.4 Dynamic Buffers 52](#214-dynamic-buffers)
 
-[Chapter 22 — Common Pitfalls for COBOL Programmers 53](#_Toc216027012)
+[Chapter 22 — Common Pitfalls for COBOL Programmers 53](#chapter-22--common-pitfalls-for-cobol-programmers)
 
-[22.1 Uninitialized AUTOMATIC Variables 53](#_Toc216027013)
+[22.1 Uninitialized AUTOMATIC Variables 53](#221-uninitialized-automatic-variables)
 
-[22.2 Precision Errors 53](#_Toc216027014)
+[22.2 Precision Errors 53](#222-precision-errors)
 
-[22.3 Pointer Misuse 53](#_Toc216027015)
+[22.3 Pointer Misuse 53](#223-pointer-misuse)
 
-[22.4 Overreliance on ON-units 53](#_Toc216027016)
+[22.4 Overreliance on ON-units 53](#224-overreliance-on-on-units)
 
-[22.5 VARYING String Length 53](#_Toc216027017)
+[22.5 VARYING String Length 53](#225-varying-string-length)
 
-[Chapter 23 — Comprehensive COBOL → PL/I Feature Equivalence Matrix 55](#_Toc216027018)
+[Chapter 23 — Comprehensive COBOL → PL/I Feature Equivalence Matrix 55](#chapter-23--comprehensive-cobol--pli-feature-equivalence-matrix)
 
-[23.1 Program Structure 55](#_Toc216027019)
+[23.1 Program Structure 55](#231-program-structure)
 
-[23.2 Data Types 55](#_Toc216027020)
+[23.2 Data Types 55](#232-data-types)
 
-[23.3 Control Flow 56](#_Toc216027021)
+[23.3 Control Flow 56](#233-control-flow)
 
-[23.4 File I/O 56](#_Toc216027022)
+[23.4 File I/O 56](#234-file-io)
 
-[23.5 Strings 57](#_Toc216027023)
+[23.5 Strings 57](#235-strings)
 
-[23.6 Arithmetic 57](#_Toc216027024)
+[23.6 Arithmetic 57](#236-arithmetic)
 
-[23.7 SQL 58](#_Toc216027025)
+[23.7 SQL 58](#237-sql)
 
-[23.8 Error Handling 58](#_Toc216027026)
+[23.8 Error Handling 58](#238-error-handling)
 
-[23.9 Modularity 58](#_Toc216027027)
+[23.9 Modularity 58](#239-modularity)
 
-[23.10 Memory Model 58](#_Toc216027028)
+[23.10 Memory Model 58](#2310-memory-model)
 
-[Chapter 24 — Migration Checklist (Production-Ready) 60](#_Toc216027029)
+[Chapter 24 — Migration Checklist (Production-Ready) 60](#chapter-24--migration-checklist-production-ready)
 
-[24.1 Data Structure Migration Checklist 60](#_Toc216027030)
+[24.1 Data Structure Migration Checklist 60](#241-data-structure-migration-checklist)
 
-[24.2 Control Flow Checklist 60](#_Toc216027031)
+[24.2 Control Flow Checklist 60](#242-control-flow-checklist)
 
-[24.3 String Handling Checklist 60](#_Toc216027032)
+[24.3 String Handling Checklist 60](#243-string-handling-checklist)
 
-[24.4 File Handling Checklist 60](#_Toc216027033)
+[24.4 File Handling Checklist 60](#244-file-handling-checklist)
 
-[24.5 SQL Migration Checklist 61](#_Toc216027034)
+[24.5 SQL Migration Checklist 61](#245-sql-migration-checklist)
 
-[24.6 Exception Handling Checklist 61](#_Toc216027035)
+[24.6 Exception Handling Checklist 61](#246-exception-handling-checklist)
 
-[24.7 Best Practice Checklist 61](#_Toc216027036)
+[24.7 Best Practice Checklist 61](#247-best-practice-checklist)
 
-[Chapter 25 — Professional Glossary (COBOL → PL/I) 62](#_Toc216027037)
+[Chapter 25 — Professional Glossary (COBOL → PL/I) 62](#chapter-25--professional-glossary-cobol--pli)
 
-[25.1 A–C 62](#_Toc216027038)
+[25.1 A–C 62](#251-ac)
 
-[25.2 D–H 62](#_Toc216027039)
+[25.2 D–H 62](#252-dh)
 
-[25.3 I–Q 62](#_Toc216027040)
+[25.3 I–Q 62](#253-iq)
 
-[25.4 R–Z 62](#_Toc216027041)
+[25.4 R–Z 62](#254-rz)
 
-[Chapter 26 — Full Alphabetical Index 64](#_Toc216027042)
+[Chapter 26 — Full Alphabetical Index 64](#chapter-26--full-alphabetical-index)
 
-[Chapter 27 — Final Professional Recommendations 67](#_Toc216027043)
+[Chapter 27 — Final Professional Recommendations 67](#chapter-27--final-professional-recommendations)
 
-[Literature links: IBM Enterprise PL/I for z/OS - IBM Documentation 67](#_Toc216027044)
+[Literature links: IBM Enterprise PL/I for z/OS - IBM Documentation 67](#literature-links)
 
 ## Chapter 1 — Introduction
 
